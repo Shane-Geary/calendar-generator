@@ -1,5 +1,5 @@
                                   January 2025
-...Sunday.....Monday....Tuesday...Wednesday...Thursday....Friday....Saturday..
+    Sun         Mon       Tue        Wed        Thu        Fri        Sat 
 +----------+----------+----------+----------+----------+----------+----------+
 |29        |30        |31        | 1        | 2        | 3        | 4        |
 |          |          |          |          |          |          |          |

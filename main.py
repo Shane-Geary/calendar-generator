@@ -52,7 +52,7 @@ def getCalendarFor(year, month):
     calText += (' ' * 34) + MONTHS[month - 1] + ' ' + str(year) + '\n'
 
     # Add the days of the week labels to the calendar:
-    calText += '...Sunday.....Monday....Tuesday...Wednesday...Thursday....Friday....Saturday..\n'
+    calText += '    Sun         Mon       Tue        Wed        Thu        Fri        Sat \n'
 
     # The horizontal line string that separates weeks:
     weekSeparator = ('+----------' * 7) + '+\n'
@@ -105,10 +105,10 @@ window_width = max(650, len(calText.splitlines()[0]) * 8)  # Adjust width based 
 calendar_window.geometry(f"{window_width}x600")  # Set window width and height
 
 # Create a label with the calendar text, ensuring the month/year is centered
-calTextCentered = calText.center(window_width)  # Dynamically center based on window width
+# calTextCentered = calText.center(window_width) # Dynamically center based on window width
 
 # Add a label with the calendar text inside the new window
-calendar_label = tk.Label(calendar_window, text=calTextCentered, font=("Courier", 10), padx=5, pady=5)
+calendar_label = tk.Label(calendar_window, text=calText, font=("Courier", 10), padx=10, pady=10)
 calendar_label.pack()
 
 # Save the calendar to a text file (no change to the text here)
