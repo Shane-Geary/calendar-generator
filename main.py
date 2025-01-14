@@ -124,18 +124,6 @@ def getCalendarFor(year, month):
 # Generate the calendar text (including month/year)
 calText = getCalendarFor(year, month)
 
-# Create a new Toplevel window for the calendar display
-calendar_window = tk.Toplevel(root)
-calendar_window.title("Generated Calendar")
-
-# Set the size of the window dynamically based on the length of the calendar content
-window_width = max(650, len(calText.splitlines()[0]) * 8)  # Adjust width based on first line length
-calendar_window.geometry(f"{window_width}x600")  # Set window width and height
-
-# Add a label with the calendar text inside the new window
-calendar_label = tk.Label(calendar_window, text=calText, font=("Courier", 10), padx=10, pady=10)
-calendar_label.pack()
-
 # Save the calendar to a text file (no change to the text here)
 calendarFilename = f'calendar_{year}_{month}.txt'
 with open(calendarFilename, 'w') as fileObj:
