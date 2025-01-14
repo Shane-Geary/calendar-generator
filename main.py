@@ -8,7 +8,7 @@ Tags: short
 # Shane T Geary
 # ITT: 111
 # 12/14/2025
-# Grand Canyon University | OpenAI
+# Grand Canyon University | OpenAI | https://docs.python.org/3/library/tkinter.html
 
 import datetime
 import tkinter as tk
