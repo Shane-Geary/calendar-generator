@@ -66,7 +66,7 @@ def getCalendarFor(year, month):
     calText = ''  # calText will contain the string of our calendar.
 
     # Put the month and year at the top of the calendar:
-    calText += (' ' * 34) + MONTHS[month - 1] + ' ' + str(year) + '\n'
+    calText += (' ' * 50) + MONTHS[month - 1] + ' ' + str(year) + '\n'
 
     # Add the days of the week labels to the calendar:
     calText += '       Sun              Mon              Tue              Wed              Thu              Fri              Sat \n'  # Wider column headers
